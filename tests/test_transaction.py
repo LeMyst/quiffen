@@ -629,7 +629,7 @@ def test_from_list_no_splits_no_classes():
     assert transaction.payee_address == "Test Address"
     assert transaction.to_account == "Test To Account"
     assert transaction.category == Category(name="Test Category")
-    assert transaction.check_number == 1
+    assert transaction.check_number == '1'
     assert not transaction.is_split
     assert transaction.first_payment_date == datetime(2022, 3, 1)
     assert transaction.loan_length == 34
